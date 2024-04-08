@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de Tabelas</title>
+    <style>
+        table{
+            border: solid 1px black;
+        }
+        table thead th{
+            background-color: orangered;
+            color: white;
+        }
+        table tbody tr:nth-child(odd) td{
+            background-color: lightcyan;
+        }
+        table tbody tr:hover td{
+            background-color: orangered;
+            color: white;
+            cursor: pointer;
+        }
+        table tfoot td{
+            background-color: lightgray;
+            
+        }
+    </style>
+</head>
+<body>
+    <table width="250" align="center" cellspacing="0">
+        <caption>Tabela de idades de conhecidos</caption>
+        <thead>
+            <tr>
+                <th colspan="2">Minha Tabela</th>
+            </tr>
+            <tr>
+                <th title="Nome completo">Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead> 
+        <tbody>
+            <tr>
+                <td>Diogo</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td>Ivan</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>Aparecida</td>
+                <td>48</td>
+            </tr>
+            <tr>
+                <td>Raul</td>
+                <td>17</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>6</td>
+            </tr>
+        </tfoot>  
+    </table>
+</body>
+</html>
